@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prata</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Monte a sua Aliança de Prata!</h1>
+    <div class="produto">
+  <img src="{{ url_for('static', filename='img/alianca1.jpg') }}" alt="Aliança Prata 1">
+  <h2>Modelo Clássico</h2>
+  <p>Prata 925 diamantada. Tamanhos: 16, 17, 18</p>
+
+  <form action="{{ url_for('add_carrinho') }}" method="POST" class="formulario-produto">
+    <input type="hidden" name="produto" value="Aliança Prata Modelo Clássico">
+
+    <label for="tam1">Tamanho da aliança 1:</label>
+    <input type="text" name="tam1" required>
+
+    <label for="tam2">Tamanho da aliança 2:</label>
+    <input type="text" name="tam2" required>
+
+    <label for="gravacao">Gravação (opcional):</label>
+    <input type="text" name="gravacao">
+
+    <button type="submit">Adicionar ao Carrinho</button>
+  </form>
+</div>
+
+
+  <div class="Aliança Prata Modelo Côncavo">
+    <img src="{{ url_for('static', filename='img/alianca2.jpg') }}" alt="Aliança Prata 2">
+    <h2>Modelo Côncavo</h2>
+    <p>Prata lisa com leve chanfrado. Tamanhos: 15, 16, 17</p>
+    <a href="{{ url_for('add_carrinho', produto='Aliança Prata Modelo Côncavo') }}">Adicionar ao Carrinho</a>
+  </div>
+
+   <div class="Aliança Prata Modelo Côncavo">
+    <img src="{{ url_for('static', filename='img/alianca2.jpg') }}" alt="Aliança Prata 2">
+    <h2>Modelo Côncavo</h2>
+    <p>Prata lisa com leve chanfrado. Tamanhos: 15, 16, 17</p>
+    <a href="{{ url_for('add_carrinho', produto='Aliança Prata Modelo Côncavo') }}">Adicionar ao Carrinho</a>
+  </div>
+  <!-- Adicione mais produtos aqui, se quiser -->
+
+
+</body>
+</html>

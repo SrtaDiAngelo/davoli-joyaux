@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Enviado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+     <h1>Pedido enviado com sucesso!</h1>
+
+<p><strong>Nome:</strong> {{ nome }}</p>
+<p><strong>Telefone:</strong> {{ telefone }}</p>
+<p><strong>Tamanho da aliança:</strong> {{ tamanho }}</p>
+<p><strong>Acabamento:</strong> {{ acabamento }}</p>
+<p><strong>Gravação:</strong> {{ gravacao }}</p>
+<p><strong>Observações:</strong> {{ obs }}</p>
+
+<h2>Itens do Pedido:</h2>
+<ul>
+    {% for item in carrinho %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
+<p>Obrigado por comprar com a Davoli Joyaux 💎</p>
+
+<a href="{{ url_for('home') }}" class="botao-voltar">Voltar para a loja</a>
+
+</body>
+</html>

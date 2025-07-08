@@ -1,0 +1,130 @@
+body {
+    
+    background-color: #0e0e0e; /* preto elegante */
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    padding: 60px;
+    color: #f5f5f5;
+}
+
+h1 {
+    color: #d4af37; /* dourado */
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+    background-color: #d4af37; /* dourado */
+    color: #0e0e0e; /* preto pro texto */
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    background-color: #b8952e;
+    color: #ffffff;
+    box-shadow: 0px 0px 10px #d4af37;
+}
+.vitrine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.produto {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    width: 260px;
+    color: #fff;
+    box-shadow: 0 0 12px #111;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produto h2 {
+    color: #d4af37;
+    margin: 12px 0 6px;
+    font-size: 1.3em;
+}
+
+.produto p {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+.produto a {
+    background-color: #d4af37;
+    color: #0e0e0e;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.produto a:hover {
+    background-color: #b8952e;
+    color: white;
+    box-shadow: 0 0 10px #d4af37;
+}
+
+.botao-voltar {
+  display: inline-block;
+  background-color: #8c735a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #6d5c47;
+}
+.lista-carrinho {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.lista-carrinho li {
+  background-color: #fff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #e0d6c2;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.lista-carrinho li {
+  background-color: #ffffff; /* fundo branco */
+  color: #5a4634; /* texto escuro visível */
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

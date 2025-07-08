@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davoli Joyaux</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h1>Bem Vindos à Davoli Joyaux</h1>
+    <h2>Alianças em prata e ouro direto da fábrica!</h2>
+
+    <div class="vitrine">
+  <div class="produto">
+    <img src="{{ url_for('static', filename='img/aliançaprata.jpg') }}" alt="Aliança 1">
+    <h2>Aliança Prata 925</h2>
+    <p>Modelo diamantado com canaleta. Incluso Gravação, solitario e caixinha!.</p>
+    <a href="{{ url_for('prata') }}">Ver detalhes</a>
+  </div>
+
+  <div class="produto">
+    <img src="{{ url_for('static', filename='img/aliançamoeda.jpg') }}" alt="Aliança 2">
+    <h2>Aliança Moeda Antiga</h2>
+    <p>Aliança na Moeda Antiga design lateral com zircônia. Incluso Gravação, solitario e caixinha!.</p>
+    <a href="{{ url_for('moeda') }}">Ver detalhes</a>
+  </div>
+
+  <div class="produto">
+    <img src="{{ url_for('static', filename='img/aliançaouro10g7mm.jpg') }}" alt="Aliança 3">
+    <h2>Aliança Ouro 18k</h2>
+    <p>Alianças no Ouro 18k côncavo, chanfrado. Incluso Gravação, solitario e caixinha!</p>
+    <a href="{{ url_for('ouro') }}">Ver detalhes</a>
+  </div>
+</div>
+
+</body>
+</html>

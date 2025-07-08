@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Finalizar Pedido</h1>
+
+    <form action="{{ url_for('finalizar') }}" method="post" class="formulario">
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label for="telefone">Telefone/WhatsApp:</label>
+        <input type="tel" name="telefone" required>
+
+          <label for="tamanho">Tamanho da Aliança (nº):</label>
+    <input type="number" name="tamanho" min="10" max="30" required>
+
+    <label for="acabamento">Acabamento:</label>
+    <select name="acabamento" required>
+        <option value="Diamantado">Diamantado</option>
+        <option value="Liso">Liso</option>
+        <option value="Chanfrado">Chanfrado</option>
+        <option value="Com canaleta">Com Canaleta</option>
+    </select>
+
+    <label for="gravacao">Deseja gravação?</label>
+    <select name="gravacao" required>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+    </select>
+
+    <label for="obs">Observações:</label>
+    <textarea name="obs" rows="4"></textarea>
+
+    <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+</html>
