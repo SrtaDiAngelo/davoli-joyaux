@@ -1,5 +1,7 @@
 davoli-joyaux
+
 🛍️ Projeto
+
 Projeto de site para uma joalheria fictícia, desenvolvido como prática de HTML, CSS, JavaScript e Python (Flask) durante meus estudos em Desenvolvimento de Sistemas.
 
 O objetivo é consolidar meus conhecimentos em:
